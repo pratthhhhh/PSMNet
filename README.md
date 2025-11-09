@@ -43,21 +43,7 @@ print(f'Distance to object: {distance} meters')
 
 ## Datasets
 Supported datasets:
-- KITTI
-- Middlebury
-- ETH3D
-
-## Results
-State-of-the-art performance on benchmark datasets.
-
-## References
-- Related papers and resources
-
-## License
-This project is licensed under the MIT License - see LICENSE file for details.
+- DrivingStereo
 
 ## Contributing
 Contributions are welcome! Please feel free to submit pull requests.
-
-## Contact
-For questions or feedback, please open an issue on GitHub.
