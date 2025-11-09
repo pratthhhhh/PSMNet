@@ -19,7 +19,26 @@ cd PSMNet
 ## Usage
 Basic usage example:
 ```python
-# Add usage examples here
+Load stereo image pair and estimate distance:
+```python
+from psmnet import PSMNet
+import cv2
+
+# Initialize the model
+model = PSMNet()
+
+# Load stereo image pair
+left_image = cv2.imread('left_image.jpg')
+right_image = cv2.imread('right_image.jpg')
+
+# Estimate disparity map and depth
+disparity_map = model.estimate_disparity(left_image, right_image)
+depth_map = model.disparity_to_depth(disparity_map, baseline=0.15, focal_length=721.5376)
+
+# Distance to specific pixel
+distance = depth_map[y, x]
+print(f'Distance to object: {distance} meters')
+```
 ```
 
 ## Datasets
